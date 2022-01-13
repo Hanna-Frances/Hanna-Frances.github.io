@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lato&display=swap');
+
+/*
+font-family: 'Arvo', serif;
+font-family: 'Lato', sans-serif;
+*/
+
+// colours
+
+$nav-colour: #463F3A;
+$background-color: #8A817C;
+$main-color: #F4F3EE;
+$font-color: #463F3A;
+$card-color: #D8D6D0;
+$card-color2: #E6BEB2;
+
+// fonts
+$title-font: 'Arvo', serif;
+$text-font: 'Lato', sans-serif;
+
+// card format
+@mixin card($color: $card-color) {
+    background-color: $color;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+// button format
+@mixin btn($color: $card-color2) {
+    display: block;
+    padding: 0.5em;
+    margin: 0.5em auto;
+
+    width: fit-content;
+    background-color: $color;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+
+    &:hover {
+        background-color: $background-color;
+    }
+}
+
+
+// general stuff
+
+body {
+    background-color: $background-color;
+    font-family: $text-font;
+    color: $font-color;
+    font-size: 16px;
+}
+
+main {
+    background-color: $main-color;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+nav {
+    background-color: $nav-colour;
+}
+
+h1 {
+    text-align: center;
+    font-family: $title-font;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-family: $title-font;
+    font-size: 20px;
+    margin: 0.5em auto;
+}
+
+// Change this later 
+img {
+    width: 100px;
+    height: auto;
+}
+
+// nav
+
+.nav-mobile {
+
+    padding: 1em;
+
+    img {
+        width: 40px;
+        height: auto;
+
+    }
+}
+
+.nav-menu-mobile {
+    // background-color: $card-color;
+    display: none;
+    padding-bottom: 1em;
+
+    img {
+        width: 30px;
+        height: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: $main-color;
+        font-family: $title-font;
+        padding-left: 1em;
+
+    }
+
+    .nav-btn {
+        padding: 0.25em 1em;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            background-color: #6C625C;
+        }
+    }
+}
+
+// intro
+
+#intro {
+    img {
+        width: 75vw;
+        margin: 1em;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .desc {
+        @include card;
+        text-align: center;
+    }
+
+}
+
+// languages
+
+#languages {
+    .lan-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1em;
+        gap: 5px;
+    }
+
+    ul {
+        @include card($color: $card-color2);
+        display: flex;
+        align-content: space-around;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5em;
+    }
+
+}
+
+// projects
+
+#projects {
+    text-align: center;
+
+    h1 {
+        padding-bottom: 0.5em;
+    }
+
+    .proj-card {
+        @include card($color: $main-color);
+        margin: 1em auto;
+        border-style: solid;
+        border-color: $card-color;
+        border-width: 5px;
+        
+        img {
+            margin: 0.25em auto;
+        }
+
+        a {
+            @include btn();
+        }
+    }
+}
