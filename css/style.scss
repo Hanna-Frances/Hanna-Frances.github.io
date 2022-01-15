@@ -131,8 +131,9 @@ img {
 
 #intro {
     img {
-        width: 75vw;
-        margin: 1em;
+        display: block;
+        margin: 1em auto;
+        width: 220px;
         height: auto;
         border-radius: 50%;
     }
