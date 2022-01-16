@@ -102,6 +102,16 @@ img {
     // background-color: $card-color;
     display: none;
     padding-bottom: 1em;
+}
+
+.nav-desktop {
+    display: none;
+}
+
+.nav-btn {
+    padding: 0.25em 1em;
+    display: flex;
+    align-items: center;
 
     img {
         width: 30px;
@@ -116,14 +126,8 @@ img {
 
     }
 
-    .nav-btn {
-        padding: 0.25em 1em;
-        display: flex;
-        align-items: center;
-
-        &:hover {
-            background-color: #6C625C;
-        }
+    &:hover {
+        background-color: #6C625C;
     }
 }
 
@@ -223,6 +227,24 @@ img {
 
         p {
             font-size: 1.25em;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .nav-mobile {
+        display: none;
+    }
+    
+    .nav-desktop {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5em
+    }
+
+    .nav-btn {
+        a {
+            padding-left: 0.5em;
         }
     }
 }
