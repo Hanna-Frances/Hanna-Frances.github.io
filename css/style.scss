@@ -59,6 +59,7 @@ main {
     padding: 1em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 3em;
 }
 
@@ -245,6 +246,43 @@ img {
     .nav-btn {
         a {
             padding-left: 0.5em;
+        }
+    }
+
+
+
+    #intro {
+        .intro-box {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5em;
+
+            .desc {
+                width: 300px;
+                height: auto;
+            }
+        }
+    }
+
+    #languages {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #projects {
+
+        .cards {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 0.75em;
+        }
+
+        .proj-card {
+            width: 325px;
+            height: auto;
         }
     }
 }

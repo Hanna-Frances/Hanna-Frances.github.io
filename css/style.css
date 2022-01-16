@@ -20,6 +20,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 3em;
 }
 
@@ -252,6 +255,45 @@ img {
   }
   .nav-btn a {
     padding-left: 0.5em;
+  }
+  #intro .intro-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.5em;
+  }
+  #intro .intro-box .desc {
+    width: 300px;
+    height: auto;
+  }
+  #languages {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #projects .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    gap: 0.75em;
+  }
+  #projects .proj-card {
+    width: 325px;
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
