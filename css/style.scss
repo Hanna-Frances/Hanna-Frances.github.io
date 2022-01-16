@@ -89,8 +89,8 @@ img {
 // nav
 
 .nav-mobile {
-
     padding: 1em;
+    
 
     img {
         width: 40px;
@@ -232,6 +232,8 @@ img {
     }
 }
 
+
+// larger screens like tablets
 @media screen and (min-width: 500px) {
     .nav-mobile {
         display: none;
@@ -240,7 +242,9 @@ img {
     .nav-desktop {
         display: flex;
         justify-content: flex-end;
-        padding: 0.5em
+        padding: 0.5em;
+
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .nav-btn {
@@ -291,7 +295,7 @@ img {
     }
 }
 
-
+// desktop
 @media screen and (min-width: 780px) {
 
     .nav-desktop {
