@@ -259,6 +259,10 @@ img {
             align-items: center;
             gap: 0.5em;
 
+            img {
+                width: 270px;
+            }
+
             .desc {
                 width: 300px;
                 height: auto;

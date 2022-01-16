@@ -272,6 +272,9 @@ img {
             align-items: center;
     gap: 0.5em;
   }
+  #intro .intro-box img {
+    width: 270px;
+  }
   #intro .intro-box .desc {
     width: 300px;
     height: auto;
