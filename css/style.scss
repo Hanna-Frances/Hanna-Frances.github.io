@@ -52,11 +52,13 @@ body {
     font-family: $text-font;
     color: $font-color;
     font-size: 16px;
+    
 }
 
 main {
     background-color: $main-color;
     padding: 1em;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,7 +92,6 @@ img {
 
 .nav-mobile {
     padding: 1em;
-    
 
     img {
         width: 40px;
@@ -130,6 +131,17 @@ img {
     &:hover {
         background-color: #6C625C;
     }
+}
+
+// sticky nav
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + main {
+    padding-top: 60px;
 }
 
 // intro

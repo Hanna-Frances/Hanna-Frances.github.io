@@ -13,6 +13,7 @@ body {
 main {
   background-color: #F4F3EE;
   padding: 1em;
+  padding-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,6 +91,16 @@ img {
 
 .nav-btn:hover {
   background-color: #6C625C;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + main {
+  padding-top: 60px;
 }
 
 #intro img {
