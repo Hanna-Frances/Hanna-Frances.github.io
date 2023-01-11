@@ -162,10 +162,10 @@ img {
 
 }
 
-// languages
+// skills
 
-#languages {
-    .lan-title {
+#skills {
+    .skills-title {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -179,7 +179,7 @@ img {
     }
 
     ul {
-        @include card($color: $card-color2);
+        @include card($color: $card-color);
         display: flex;
         align-content: space-around;
         justify-content: center;
@@ -286,7 +286,7 @@ img {
         }
     }
 
-    #languages {
+    #skills {
         width: 350px;
         margin-left: auto;
         margin-right: auto;
