@@ -202,6 +202,8 @@ img {
 
 #projects .proj-card a:hover {
   background-color: #8A817C;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
 #contact h1 {
@@ -245,6 +247,8 @@ img {
 
 #contact .con-btn:hover {
   background-color: #8A817C;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
 #contact .con-btn p {
