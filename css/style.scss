@@ -53,7 +53,6 @@ body {
     font-family: $text-font;
     color: $font-color;
     font-size: 16px;
-    
 }
 
 main {
@@ -64,6 +63,7 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 3em;
+    line-height: 1.5em;
 }
 
 nav {
@@ -159,6 +159,7 @@ img {
     .desc {
         @include card;
         text-align: center;
+        
     }
 
 }
