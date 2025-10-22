@@ -126,7 +126,6 @@ img {
         color: $main-color;
         font-family: $title-font;
         padding-left: 1em;
-
     }
 
     &:hover {
@@ -158,7 +157,7 @@ img {
 
     .desc {
         @include card;
-        text-align: center;
+        text-align: left;
         
     }
 
